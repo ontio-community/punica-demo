@@ -42,7 +42,7 @@ Token互换合约实现的功能是：对于符合nep5标准的Token实现互换
 8. 持有TokenA的用户调用Exchange方法兑换TokenB
 
 ### 合约源代码
-```
+```c#
 using Ont.SmartContract.Framework;
 using Ont.SmartContract.Framework.Services.Ont;
 using Ont.SmartContract.Framework.Services.System;
