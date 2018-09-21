@@ -14,7 +14,7 @@ Token兑换服务dApp,提供Ontology上Nep5规范的token相互兑换的服务�
 
 ## 页面示例
 
-[token-exchange](./images/token-exchange.jpg)
+![token-exchange](./images/token-exchange.jpg)
 
 
 ## 合约
