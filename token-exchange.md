@@ -12,6 +12,11 @@ Token兑换服务dApp,提供Ontology上Nep5规范的token相互兑换的服务�
 * 用户可以选择需要兑换的Nep5的token
 * 服务商可以设置token兑换的手续费
 
+## 页面示例
+
+[token-exchange](./images/token-exchange.jpg)
+
+
 ## 合约
 
 Token互换合约实现的功能是：对于符合nep5标准的Token实现互换
@@ -204,6 +209,4 @@ namespace ExchangeContract
 }
 ```
 
-## 页面示例
 
-[token-exchange](./images/token-exchange.jpg)
