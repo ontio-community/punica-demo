@@ -22,7 +22,7 @@
 
 ## 合约
 
-加密邮箱合约实现的功能是：加密的消息储存和获取。
+加密邮箱合约实现的功能是：加密的消息储存和获取。[测试代码](https://github.com/JasonZhouPW/ontology-test/blob/NewFor92/testcase/smartcontract/neovm/deploy_invoke/testCryptoMsg.go)
 
 ### 用法
 
