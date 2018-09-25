@@ -38,16 +38,35 @@ $ tree
     └── wallet
 ```
 
-```build```  build后文件存放的地方
+```build```  Files for building vue project.
 
-```config```  配置文件
+```config```  Configuration files.
 
-```contracts``` 智能合约源码，编译、部署、调用、测试脚本，测试配置文件。
+```contracts``` Diretory for smart contracts related files. ```config``` contains configuration files for deploying and invoking smart contracts. ```contracts``` contains smartc contract source codes, avm and abi files generated after comiple.
 
-```src```  ui源码
+```src```  Vue project source codes.
 
-```static```
+```static``` Static files
 
-```wallet``` 钱包文件
+```wallet``` Wallet file.
 
 ## How to use ontsctf.py ?
+
+ontsctf.py is used to compile, deploy and test smart contracts。
+### Compile
+```
+npm run sc-compile
+```
+It will generate the abi and avm files and put them in /contracts/contracts directory.
+
+### Deploy
+```
+npm run sc-deploy
+```
+Smart contract deployment needs the configuration file deploy.json and put it in /contracts/config/ directory.
+
+### Test SC methods
+```
+npm run sc-invoke
+```
+Testing sc methods needs the configuration file invoke.json and put it in /contracts/config/ directory.
