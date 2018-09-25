@@ -24,19 +24,20 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## Directory structure
 
-    ```shell
-    $ tree
-    └── obox-exchange
-        ├── build
+```shell
+$ tree
+└── obox-exchange
+    ├── build
+    └── config
+    └── contracts
         └── config
         └── contracts
-            └── config
-            └── contracts
-            ontsctf.py
-        └── src
-        └── static
-        └── wallet
-    ```
+        ontsctf.py
+    └── src
+    └── static
+    └── wallet
+```
+
 ```build```  build后文件存放的地方
 
 ```config```  配置文件
