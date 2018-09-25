@@ -1,0 +1,29 @@
+{
+    "rpc_address": "http://polaris1.ont.io:20336",
+    "payer_address": "AHX1wzvdw9Yipk7E9MuLY4GGX4Ym9tHeDe",
+    "payer_password": "111111",
+    "wallet_file_path": "./wallet/wallet.json",
+    "gas_limit": 20000,
+    "gas_price": 500,
+    "abi_path": "./contracts/contracts/ExchangeContract_abi.json", 
+    "save_file": "./contracts/contracts/invoke.csv", 
+    "function": {
+        "SetTokenBase": {
+            "function_name": "SetTokenBase",
+            "function_param": {
+                "symbol": "Token1",
+                "value": 1
+            },
+            "signers": { 
+                "m": 1, 
+                "signer": { 
+                    "walletpath": "./wallet/wallet.json", 
+                    "address": "AHX1wzvdw9Yipk7E9MuLY4GGX4Ym9tHeDe", 
+                    "password": "111111"
+                }
+            },
+            "pre_exec": false
+        }
+        
+    }
+}
