@@ -6,9 +6,10 @@ dApp优势：
 * 提高安全性。dApp可以对上链数据做保护或加密，用户通过密钥获取数据，无需通过数据网关。
 * 密码学。账户安全性。
 * 去中心化数据存储。多节点存储。
-dapp-examples只是dapp的参考例子，合约还需要用户自己测试，并不适合直接商用。[项目实例](./obox-exchange)
 
-[已经上线的dApps](https://dapp.ont.io/)
+>dapp-examples只是dapp的参考例子，合约还需要用户自己测试，并不适合直接商用。
+
+
 
 ## dApp开发框架
 
@@ -24,20 +25,20 @@ dApp开发框架是方便用户开发dApp的工具集，包含以下几个模块
 
 **Blockchain(Ontology Node)**
 
-[安装](https://ontio.github.io/documentation/install_en.html)
-[源码](https://github.com/ontio/ontology)
-[release](https://github.com/ontio/ontology/releases)
-[http API](https://ontio.github.io/documentation/rpc_api_en.html)
-[命令行文档](https://github.com/ontio/ontology/blob/master/docs/specifications/cli_user_guide_CN.md)
+* [安装](https://ontio.github.io/documentation/install_en.html)
+* [源码](https://github.com/ontio/ontology)
+* [release](https://github.com/ontio/ontology/releases)
+* [http API](https://ontio.github.io/documentation/rpc_api_en.html)
+* [命令行文档](https://github.com/ontio/ontology/blob/master/docs/specifications/cli_user_guide_CN.md)
 
 **Smart Contract(compile,deploy,invoke,debug,test)**
 
-[教材](https://ontio.github.io/documentation/Introduction_of_Ontology_Smart_Contract_en.html)
-[智能合约文档](https://github.com/ontio/ontology-smartcontract)
-[API文档](https://apidoc.ont.io/smartcontract/)
-[SmartX](https://smartx.ont.io/)
-[C#编译器](https://github.com/ontio/ontology-compiler)
-[Python编译器](https://github.com/ontio/neo-boa)
+* [教材](https://ontio.github.io/documentation/Introduction_of_Ontology_Smart_Contract_en.html)
+* [智能合约文档](https://github.com/ontio/ontology-smartcontract)
+* [API文档](https://apidoc.ont.io/smartcontract/)
+* [SmartX](https://smartx.ont.io/)
+* [C#编译器](https://github.com/ontio/ontology-compiler)
+* [Python编译器](https://github.com/ontio/neo-boa)
 
 **SDKs and dAPI**
 
@@ -46,16 +47,16 @@ dApp开发框架是方便用户开发dApp的工具集，包含以下几个模块
 * [Python SDK](https://github.com/ontio/ontology-python-sdk) 
 * [Golang SDK](https://github.com/ontio/ontology-go-sdk)
 
-[dAPI教程](https://ontio.github.io/documentation/ontology_dapp_dev_tutorial_en.html)
-[dAPI源码](https://github.com/ontio/ontology-dapi)
+* [dAPI教程](https://ontio.github.io/documentation/ontology_dapp_dev_tutorial_en.html)
+* [dAPI源码](https://github.com/ontio/ontology-dapi)
 
-[iOS钱包集成](https://ontio.github.io/documentation/ontology_wallet_dev_ts_sdk_en.html)
-[Android钱包集成](https://ontio.github.io/documentation/ontology_wallet_dev_android_en.html)
+* [iOS钱包集成](https://ontio.github.io/documentation/ontology_wallet_dev_ts_sdk_en.html)
+* [Android钱包集成](https://ontio.github.io/documentation/ontology_wallet_dev_android_en.html)
 
 
 **Decentralized Storage (IPFS)**
 
-[IPFS实践文档](https://github.com/ChainBook/IPFS-For-Chinese)
+* [IPFS实践文档](https://github.com/ChainBook/IPFS-For-Chinese)
 
 **Web Technologies**
 
@@ -63,13 +64,13 @@ dApp开发框架是方便用户开发dApp的工具集，包含以下几个模块
 
 **Other**
 
-[区块链浏览器](https://explorer.ont.io/)
-[官方文档](https://ontio.github.io/documentation/)
-[同步区块程序](https://github.com/zzsZhou/OntSynHandler)
-[签名机文档](https://github.com/ontio/ontology/blob/master/docs/specifications/sigsvr_CN.md)
+* [区块链浏览器](https://explorer.ont.io/)
+* [官方文档](https://ontio.github.io/documentation/)
+* [同步区块程序](https://github.com/zzsZhou/OntSynHandler)
+* [签名机文档](https://github.com/ontio/ontology/blob/master/docs/specifications/sigsvr_CN.md)
 
 
-## dApp例子分类
+## dApp分类
 
 
 dApp类型：
@@ -93,7 +94,7 @@ dApp类型：
 * 交易所
 * 其他
 
-以下针对dApp的不同类型分别有对应例子。
+项目实例[这里](./obox-exchange)，官网已经上线的dApps[这里](https://dapp.ont.io/)。以下针对dApp的不同类型分别有对应例子。
 
 ### 游戏
 
