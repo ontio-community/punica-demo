@@ -218,4 +218,88 @@ namespace ExchangeContract
 }
 ```
 
+## contract instruction
 
+* Set the Token base to calculate the conversion ratio of different Tokens.
+
+```
+public static bool SetTokenBase(string symbol, BigInteger value)
+```
+
+parameter description
+
+`symbol`   Token symbol
+
+`value`    Token base
+
+For example, if the Token base of TokenA is set to 1, and the Token base of TokenB is set to 2, the ratio of Token1 and Token2 when redeeming is 1:2.
+
+* query Token base
+
+```
+public static BigInteger GetTokenBase(string symbol)
+```
+
+parameter description
+
+`symbol`   Token name
+
+* setting fee
+
+```
+public static bool SetFeeRate(ulong percentage)
+```
+
+parameter description
+
+percentage   fee
+
+For example, percentage=5, indicating that the handling fee is 5%.
+
+* query fee
+
+```
+public static BigInteger GetFeeRate()
+```
+
+* setting Token contract hash
+
+```
+ public static bool SetContractHash(string key, byte[] hash)
+```
+
+parameter description
+
+`key` Token contract name
+
+`hash` Token contract hash
+
+Note: When setting the Token contract address, you need to reverse the Token address.
+
+* query contract hash
+
+```
+public static byte[] GetContractHash(string key)
+```
+
+parameter description
+
+`key` Token name
+
+* exchanging of different Tokens
+
+```
+public static bool Exchange(byte[] from, byte[] to, string fromSymbol, string toSymbol, ulong value)
+```
+
+parameter description
+
+`from` Redeem the account of the Token originator
+
+`to` Purpose Token's recycling account
+
+`fromSymbol`  The symbol of the originator Token
+
+`toSymbol` Token symbol to be redeemed
+
+`value` Number of redemptions
