@@ -61,7 +61,7 @@ def compile_cmd(m: [], arg: str):
         payload["type"] = "CSharp"
         # url = "http://42.159.94.234:8080/api/v1.0/compile"
         url = "https://smartxcompiler.ont.io/api/v1.0/csharp/compile"
-        with open(arg, "r") as f:
+        with open(arg, "r",encoding='UTF-8') as f:
             contract = f.read()
             if str == "":
                 print("contract is null")
@@ -315,7 +315,7 @@ def deploy(sdk, m):
     sdk.sign_transaction(tx, acct)
     sdk.set_rpc(m["rpc_address"])
     try:
-        print("deploying，please waiting ...")
+        print("deploying,please waiting ...")
         res = sdk.rpc.send_raw_transaction(tx)
         print("txhash:", res)
         for i in range(10):
