@@ -16,15 +16,15 @@ Token兑换服务dApp,提供Ontology上Nep5规范的token相互兑换的服务�
 
 主页面：
 
-![token-exchange](./images/token-exchange.jpg)
+![token-exchange](images/token-exchange.jpg)
 
 兑换页面：
 
-![token-exchange2](./images/token-exchange2.jpg)
+![token-exchange2](images/token-exchange2.jpg)
 
 用户确认签名页面：
 
-![token-exchange3](./images/token-exchange3.jpg)
+![token-exchange3](images/token-exchange3.jpg)
 
 ## 合约
 
