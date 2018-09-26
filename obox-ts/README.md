@@ -1,4 +1,4 @@
-# obox-exchange
+# obox-ts
 
 > A Vue.js project
 
