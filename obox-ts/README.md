@@ -102,13 +102,6 @@ npm run build
 npm run build --report
 ```
 
-ontsctf require:
-
-python >= 3.7
-
-```
-pip install ontology-python-sdk
-```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
@@ -145,6 +138,15 @@ $ tree
 ## How to use ontsctf.py ?
 
 ontsctf.py is used to compile, deploy and test smart contracts。
+
+### ontsctf require:
+
+python >= 3.7
+
+```
+pip install ontology-python-sdk
+```
+
 ### Compile
 ```
 npm run sc-compile
