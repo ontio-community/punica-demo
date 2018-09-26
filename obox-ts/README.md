@@ -16,6 +16,7 @@ public static bool SetTokenBase(string symbol, BigInteger value)
 parameter description
 
 `symbol`   Token symbol
+
 `value`    Token base
 
 For example, if the Token base of TokenA is set to 1, and the Token base of TokenB is set to 2, the ratio of Token1 and Token2 when redeeming is 1:2.
@@ -57,6 +58,7 @@ public static BigInteger GetFeeRate()
 parameter description
 
 `key` Token contract name
+
 `hash` Token contract hash
 
 Note: When setting the Token contract address, you need to reverse the Token address.
@@ -80,9 +82,13 @@ public static bool Exchange(byte[] from, byte[] to, string fromSymbol, string to
 parameter description
 
 `from` Redeem the account of the Token originator
+
 `to` Purpose Token's recycling account
+
 `fromSymbol`  The symbol of the originator Token
+
 `toSymbol` Token symbol to be redeemed
+
 `value` Number of redemptions
 
 
