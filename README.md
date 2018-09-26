@@ -25,6 +25,7 @@ dApp开发框架是方便用户开发dApp的工具集，包含以下几个模块
 
 **Blockchain(Ontology Node)**
 
+* 主网(http://dappnode1.ont.io)，测试网(http://polaris1.ont.io)。端口号：rpc(20336),restful(20334),websocket(20335)
 * [安装](https://ontio.github.io/documentation/install_en.html)
 * [源码](https://github.com/ontio/ontology)
 * [release](https://github.com/ontio/ontology/releases)
@@ -42,11 +43,7 @@ dApp开发框架是方便用户开发dApp的工具集，包含以下几个模块
 
 **SDKs and dAPI**
 
-* [Java SDK](https://github.com/ontio/ontology-java-sdk)
-* [Typescript SDK](https://github.com/ontio/ontology-ts-sdk)
-* [Python SDK](https://github.com/ontio/ontology-python-sdk) 
-* [Golang SDK](https://github.com/ontio/ontology-go-sdk)
-
+* [Java SDK](https://github.com/ontio/ontology-java-sdk)， [Typescript SDK](https://github.com/ontio/ontology-ts-sdk)， [Python SDK](https://github.com/ontio/ontology-python-sdk) ， [Golang SDK](https://github.com/ontio/ontology-go-sdk)
 * [dAPI教程](https://ontio.github.io/documentation/ontology_dapp_dev_tutorial_en.html)
 * [dAPI源码](https://github.com/ontio/ontology-dapi)
 
