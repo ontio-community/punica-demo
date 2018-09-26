@@ -63,6 +63,7 @@ dApp开发框架是方便用户开发dApp的工具集，包含以下几个模块
 
 * [区块链浏览器](https://explorer.ont.io/)
 * [官方文档](https://ontio.github.io/documentation/)
+* [Ontid和Claim文档](https://ontio.github.io/documentation/ontology_DID_en.html)
 * [同步区块程序](https://github.com/zzsZhou/OntSynHandler)
 * [签名机文档](https://github.com/ontio/ontology/blob/master/docs/specifications/sigsvr_CN.md)
 
