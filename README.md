@@ -30,6 +30,7 @@ Obox框架目前实现了Typescript和Python版本，[Typescript Obox](obox-ts)�
 * [源码](https://github.com/ontio/ontology)
 * [release](https://github.com/ontio/ontology/releases)
 * [http API](https://ontio.github.io/documentation/rpc_api_en.html)
+* [postman](https://documenter.getpostman.com/view/1459587/RWaRP68Y)
 * [命令行文档](https://github.com/ontio/ontology/blob/master/docs/specifications/cli_user_guide_CN.md)
 
 **Smart Contract(compile,deploy,invoke,debug,test)**
