@@ -6,8 +6,6 @@
 - [2. Architecture](#2-architecture)
 - [3. Setting up the development environment](#3-setting-up-the-development-environment)
 - [4. Getting started](#4-getting-started)
-    - [4.1. what's the OBox](#41-whats-the-obox)
-    - [4.2. Unboxing the DApp](#42-unboxing-the-dapp)
     - [4.3. Creating Smart Contract](#43-creating-smart-contract)
     - [4.4. Implement the Interface of OEP4 Contract](#44-implement-the-interface-of-oep4-contract)
         - [4.4.1. Support Getting the Parameters of Token](#441-support-getting-the-parameters-of-token)
@@ -64,40 +62,12 @@ There are a few technical requirements before we start. Please install the follo
 
 ## 4. Getting started
 
-### 4.1. what's the OBox
-
-In the past, when we wanted to begin developing on Ontology Blockchain, the first question we may ask is, "Where do I start?".
-
-Now, we have a brief answer, “Start from OBox”.
-
-OBox is an example Ontology application and/or boilerplate that puts complimentary tools and libraries into a single, easily-downloadable package. Every ontology box comes with libraries and tools already preinstalled, code that uses those libraries and tools, external scripts (if necessary), as well as helpful README's and documentation. All ontology boxes are directly integrated into the OBox command line, and you need only type `OBox --install <box name>` to download and prepare your box of choice.
-
-Before we begin a wonderful journey, ensure you've installed the latest version of OBox before opening your first box.
-
-### 4.2. Unboxing the DApp
-
-Install Ontology DApp Box.
-
 ```shell
-pip install OBox
+pip install requirements.txt
 ```
 
-Download the DApp box.
-
 ```shell
-OBox --install tutorialtoken
-```
-
-Create virtual environments(optional).
-
-```shell
-virtualenv --no-site-packages venv
-```
-
-Install the necessary dependencies.
-
-```shell
-pip install -r requirements.txt
+python tutorial_token.py
 ```
 
 ### 4.3. Creating Smart Contract
