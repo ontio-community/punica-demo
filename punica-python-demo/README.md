@@ -6,15 +6,15 @@
 - [2. Architecture](#2-architecture)
 - [3. Setting up the development environment](#3-setting-up-the-development-environment)
 - [4. Getting started](#4-getting-started)
-    - [4.3. Creating Smart Contract](#43-creating-smart-contract)
-    - [4.4. Implement the Interface of OEP4 Contract](#44-implement-the-interface-of-oep4-contract)
-        - [4.4.1. Support Getting the Parameters of Token](#441-support-getting-the-parameters-of-token)
-        - [4.4.2. Initialize Token Parameter](#442-initialize-token-parameter)
-    - [4.5. Support Check Balance](#45-support-check-balance)
-    - [4.6. Support Transfer](#46-support-transfer)
-        - [4.6.1. Transfer](#461-transfer)
-        - [4.6.2. TransferMulti](#462-transfermulti)
-        - [4.6.3. TransferFrom](#463-transferfrom)
+    - [4.1. Creating Smart Contract](#41-creating-smart-contract)
+    - [4.2. Implement the Interface of OEP4 Contract](#42-implement-the-interface-of-oep4-contract)
+        - [4.2.1. Support Getting the Parameters of Token](#421-support-getting-the-parameters-of-token)
+        - [4.2.2. Initialize Token Parameter](#422-initialize-token-parameter)
+    - [4.3. Support Check Balance](#43-support-check-balance)
+    - [4.4. Support Transfer](#44-support-transfer)
+        - [4.4.1. Transfer](#441-transfer)
+        - [4.4.2. TransferMulti](#442-transfermulti)
+        - [4.4.3. TransferFrom](#443-transferfrom)
 - [5. Run your DApp](#5-run-your-dapp)
 - [6. Use your DApp](#6-use-your-dapp)
     - [6.1. Information Query](#61-information-query)
@@ -70,7 +70,7 @@ pip install requirements.txt
 python tutorial_token.py
 ```
 
-### 4.3. Creating Smart Contract
+### 4.1. Creating Smart Contract
 
 With our front-end taken care of, we can focus on the `oep4_token` contract.
 
@@ -114,9 +114,9 @@ Things to notice:
 - The `TOTAL_AMOUNT` variable determines the number of tokens created when this contract is deployed. In this case, the number is arbitrary.
 - The `SUPPLY_KEY`, `TRANSFER_PREFIX` and `APPROVE_PREFIX` variable will be used in storage.
 
-### 4.4. Implement the Interface of OEP4 Contract
+### 4.2. Implement the Interface of OEP4 Contract
 
-#### 4.4.1. Support Getting the Parameters of Token
+#### 4.2.1. Support Getting the Parameters of Token
 
 Now, we want to get the parameters of the token, we can just return them.
 
@@ -156,7 +156,7 @@ def TotalSupply():
     return Get(ctx,SUPPLY_KEY)
 ```
 
-#### 4.4.2. Initialize Token Parameter
+#### 4.2.2. Initialize Token Parameter
 
 In Ontology smart contract, `Notify()` is an interface that used to send notifications (including socket notifications or rpc queries) to clients that are executing this smart contract.
 
@@ -177,7 +177,7 @@ def Init():
 
 **NOTE**: By the help of `Put(ctx, concat(TRANSFER_PREFIX, OWNER), total)`, we allot all token to onwer.
 
-### 4.5. Support Check Balance
+### 4.3. Support Check Balance
 
 We can maintain an account book in smart contract's storage context, by using `Put()`, `Get()` and allot an unique `key` for earch account.
 
@@ -186,9 +186,9 @@ def BalanceOf(account):
     return Get(ctx, concat(TRANSFER_PREFIX, account))
 ```
 
-### 4.6. Support Transfer
+### 4.4. Support Transfer
 
-#### 4.6.1. Transfer
+#### 4.4.1. Transfer
 
 `CheckWitness` interface is used to verify operational permissions of account or contract. We don't want our tokens to be spent by others, so we need to verify operational permissions.
 
@@ -221,7 +221,7 @@ def Transfer(from_acct, to_acct, amount):
     return True
 ```
 
-#### 4.6.2. TransferMulti
+#### 4.4.2. TransferMulti
 
 ```python
 def TransferMulti(args):
@@ -233,7 +233,7 @@ def TransferMulti(args):
     return True
 ```
 
-#### 4.6.3. TransferFrom
+#### 4.4.3. TransferFrom
 
 ```python
 def TransferFrom(sender, from_acct, to_acct, amount):
