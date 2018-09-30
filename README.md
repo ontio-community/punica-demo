@@ -11,7 +11,7 @@ Punica框架是方便用户开发dApp的工具集，使用Typescript和python开
 * Web Technologies
 * Other
 
-Obox框架目前实现了Typescript和Python版本，[Typescript Obox](obox-ts)，[Python Obox](obox-python)。接下来描述每个模块的使用方法和文档说明。
+Punica框架目前实现了Typescript和Python版本，[punica-ts-demo](punica-ts-demo)，[punica-python-demo](punica-python-demo)。接下来描述每个模块的使用方法和文档说明。
 
 **Blockchain(Ontology Node)**
 
@@ -59,95 +59,25 @@ Obox框架目前实现了Typescript和Python版本，[Typescript Obox](obox-ts)�
 * [签名机文档](https://github.com/ontio/ontology/blob/master/docs/specifications/sigsvr_CN.md)
 
 
-## dApp分类
+## dApp
 
-
-dApp类型：
-
-* Token
-* 游戏
-* 博彩
-* 娱乐
-* 医疗
-* 广告/营销
-* 交易/电商
-* 新闻资讯
-* 数字钱包/支付
-* 房地产
-* 浏览器
-* 旅游
-* 工具
-* 金融
-* 投资
-* 求职/就业
-* 社交
-* 存储
-* 交易所
-* 其他
 
 案例[这里](examples)，官网已经上线的dApps[这里](https://dapp.ont.io/)。以下针对dApp的不同类型分别有对应例子。
 
-### Token
 * [Nep-5]()(没文档)
 * [Oep-4]()(没文档)
 * [Bancor]()(没文档)
-
-### 游戏
-
-### 博彩
 * [一元夺宝]()(没文档)
-### 娱乐
-
-### 医疗
-
-### 广告/营销
-
-### 交易/电商
 * [域名拍卖](examples/domain-auction.md)
-
-### 新闻资讯
-
-
-
-### 数字钱包/支付
-
 * [上线的钱包](https://dapp.ont.io/)
-
-
-### 房地产
-
-### 浏览器
-
 * [区块链浏览器](https://explorer.ont.io/)
-
-### 旅游
-
-### 金融
-
-### 投资
-
-### 社交
-
-
-
-### 存储
-
 * [dFS去中心化文件系统]()(没文档)
-
-### 交易所
-
 * [Token兑换服务](examples/token-exchange.md)
 * [对人民币交易平台](ddfx.md)(没文档)
 * [数据交易](ddfx.md)(没文档)
-
-### 工具
-
 * [交易定时器](examples/transaction-timer.md)
 * [余额变动短信提醒](dfs.md)
 * [加密邮箱](examples/crypto-message.md)
 
 
-### 其他
-
-* [信用查询系统]()(没文档)
 
