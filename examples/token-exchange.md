@@ -33,12 +33,21 @@ Token互换合约实现的功能是：对于符合nep5标准的Token实现互换
 ### 用法
 
 1. 调用SetContractHash方法将TokenA和TokenB的合约hash保存到互换合约中
+
+> Note: TokenA和TokenB的合约地址要先进行反转，然后在调用SetContractHash
+
 2. 调用GetContractHash方法查询TokenA和TokenB的合约地址信息
+
+> Note:查询结果应该是TokenA和TokenB反转后的地址
+
 3. 调用SetTokenBase方法设置TokenA和TokenB的互换比例
 4. 调用GetTokenBase查询互换比例
 5. 调用SetFeeRate设置手续费率
 6. 调用GetFeeRate查询手续费率
 7. 将TokenA发行的代币一部分打给互换合约地址，将TokenB发行的代币一部分打给互换合约地址（也就是各种代币在互换合约中预存一部分Token，用于用户兑换）
+
+> Note: 往互换合约中打钱时，一定要现将互换合约的地址进行反转，再打钱
+
 8. 持有TokenA的用户调用Exchange方法兑换TokenB
 
 ### 合约源代码
