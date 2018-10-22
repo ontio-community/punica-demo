@@ -1,0 +1,80 @@
+{
+    "defaultWallet": "wallet.json",
+    "password": {
+        "ANH5bHrrt111XwNEnuPZj6u95Dd6u7G4D6": "password",
+        "AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve": "password"
+    },
+    "deployConfig": {
+        "name": "exchange",
+        "version": "1.0.0",
+        "author": "",
+        "email": "",
+        "desc": "A token exchange contract based on Ontology Blockchain",
+        "needStorage": true,
+        "payer": "ANH5bHrrt111XwNEnuPZj6u95Dd6u7G4D6",
+        "gasPrice": 500,
+        "gasLimit": 21000000
+    },
+    "invokeConfig": {
+        "abi": "ExchangeContract_abi.json",
+        "defaultPayer": "ANH5bHrrt111XwNEnuPZj6u95Dd6u7G4D6",
+        "defaultSigner": "ANH5bHrrt111XwNEnuPZj6u95Dd6u7G4D6",
+        "gasPrice": 0,
+        "gasLimit": 21000000,
+        "functions": {
+            "SetTokenBase": {
+                "params": {
+                    "symbol": "",
+                    "value": ""
+                },
+                "signers": {},
+                "preExec": true
+            },
+            "GetTokenBase": {
+                "params": {
+                    "symbol": ""
+                },
+                "signers": {},
+                "preExec": true
+            },
+            "SetFeeRate": {
+                "params": {
+                    "percentage": ""
+                },
+                "signers": {},
+                "preExec": true
+            },
+            "GetFeeRate": {
+                "params": {},
+                "signers": {},
+                "preExec": true
+            },
+            "SetContractHash": {
+                "params": {
+                    "key": "",
+                    "hash": ""
+                },
+                "signers": {},
+                "preExec": true
+            },
+            "GetContractHash": {
+                "params": {
+                    "key": ""
+                },
+                "signers": {},
+                "preExec": true
+            },
+            "Exchange": {
+                "params": {
+                    "from": "",
+                    "to": "",
+                    "fromSymbol": "",
+                    "toSymbol": "",
+                    "value": ""
+                },
+                "signers": {},
+                "preExec": true
+            }
+        }
+    }
+}
