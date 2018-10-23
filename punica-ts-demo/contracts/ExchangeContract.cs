@@ -11,7 +11,7 @@ namespace ExchangeContract
     {
         // 合约管理员，设置Token兑换比率，手续费等操作
         //public static readonly byte[] admin = "AT4dGijAQSMcN5mj2q7ePTWcKFEnG1qeu3".ToScriptHash();
-        public static readonly byte[] admin = "AefENjgwPQsGNVocUB2X3Rh3tG18uZPnv6".ToScriptHash();
+        public static readonly byte[] admin = "ANH5bHrrt111XwNEnuPZj6u95Dd6u7G4D6".ToScriptHash();
 
         public static readonly byte[] basePrefix = "base_".AsByteArray();
 
