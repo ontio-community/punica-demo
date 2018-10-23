@@ -24,25 +24,31 @@
         "functions": {
             "SetTokenBase": {
                 "params": {
-                    "symbol": "",
-                    "value": ""
+                    "symbol": "String:token1",
+                    "value": 1
                 },
-                "signers": {},
-                "preExec": true
+                "signers": {
+                  "m":1,
+                  "signer":["ANH5bHrrt111XwNEnuPZj6u95Dd6u7G4D6"]
+                },
+                "preExec": false
             },
             "GetTokenBase": {
                 "params": {
-                    "symbol": ""
+                    "symbol": "String:token1"
                 },
                 "signers": {},
                 "preExec": true
             },
             "SetFeeRate": {
                 "params": {
-                    "percentage": ""
+                    "percentage": 5
                 },
-                "signers": {},
-                "preExec": true
+                "signers": {
+                  "m":1,
+                  "signer":["ANH5bHrrt111XwNEnuPZj6u95Dd6u7G4D6"]
+                },
+                "preExec": false
             },
             "GetFeeRate": {
                 "params": {},
@@ -51,8 +57,8 @@
             },
             "SetContractHash": {
                 "params": {
-                    "key": "",
-                    "hash": ""
+                    "key": "String:token1",
+                    "hash": "ByteArray:5ce7de7c40af3d29a7fd939b9c05d2012b5880b4"
                 },
                 "signers": {},
                 "preExec": true
@@ -61,16 +67,19 @@
                 "params": {
                     "key": ""
                 },
-                "signers": {},
+                "signers": {
+                  "m":1,
+                  "signer":["ANH5bHrrt111XwNEnuPZj6u95Dd6u7G4D6"]
+                },
                 "preExec": true
             },
             "Exchange": {
                 "params": {
-                    "from": "",
-                    "to": "",
-                    "fromSymbol": "",
-                    "toSymbol": "",
-                    "value": ""
+                    "from": "ByteArray:ANH5bHrrt111XwNEnuPZj6u95Dd6u7G4D6",
+                    "to": "ByteArray:AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve",
+                    "fromSymbol": "String:token1",
+                    "toSymbol": "String:token2",
+                    "value": 1
                 },
                 "signers": {},
                 "preExec": true

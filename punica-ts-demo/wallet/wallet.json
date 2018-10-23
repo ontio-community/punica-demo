@@ -1,1 +1,46 @@
-{"name":"MyWallet","version":"1.1","scrypt":{"p":8,"n":16384,"r":8,"dkLen":64},"accounts":[{"address":"AHX1wzvdw9Yipk7E9MuLY4GGX4Ym9tHeDe","enc-alg":"aes-256-gcm","key":"8p2q0vLRqyfKmFHhnjUYVWOm12kPm78JWqzkTOi9rrFMBz624KjhHQJpyPmiSSOa","algorithm":"ECDSA","salt":"KbiCUr53CZUfKG1M3Gojjw==","parameters":{"curve":"P-256"},"label":"","publicKey":"02b7dcd1775031ce29f2cf07e51a15ed47debd39f93d3cea1dcb667951ecb834c6","signatureScheme":"SHA256withECDSA","isDefault":true,"lock":false}]}
+{
+    "name": "MyWallet",
+    "version": "1.1",
+    "createTime": "",
+    "defaultOntid": "",
+    "defaultAccountAddress": "",
+    "scrypt": {
+        "n": 16384,
+        "r": 8,
+        "p": 8,
+        "dkLen": 64
+    },
+    "identities": [],
+    "accounts": [
+        {
+            "address": "AHX1wzvdw9Yipk7E9MuLY4GGX4Ym9tHeDe",
+            "algorithm": "ECDSA",
+            "enc-alg": "aes-256-gcm",
+            "isDefault": true,
+            "key": "8p2q0vLRqyfKmFHhnjUYVWOm12kPm78JWqzkTOi9rrFMBz624KjhHQJpyPmiSSOa",
+            "label": "",
+            "lock": false,
+            "parameters": {
+                "curve": "P-256"
+            },
+            "salt": "KbiCUr53CZUfKG1M3Gojjw==",
+            "publicKey": "02b7dcd1775031ce29f2cf07e51a15ed47debd39f93d3cea1dcb667951ecb834c6",
+            "signatureScheme": "SHA256withECDSA"
+        },
+        {
+            "address": "AMTYGqt3J6csgqiCZij1d2VwHN842bp4H2",
+            "algorithm": "ECDSA",
+            "enc-alg": "aes-256-gcm",
+            "isDefault": true,
+            "key": "CTjKDCAW4N9ur0hFaVfaNVybcBOinJfNq+CErnXlUrBeQRizxAafDd/z1vccqf3r",
+            "label": "c5a482cf",
+            "lock": false,
+            "parameters": {
+                "curve": "P-256"
+            },
+            "salt": "NjY3MDg2ZTkwNGEyMjY5MA==",
+            "publicKey": "029ff41f3a6784a2e445c2e1a0788eeb16e753a6216dbde4292acc08d4c6aaa8a0",
+            "signatureScheme": "SHA256withECDSA"
+        }
+    ]
+}
