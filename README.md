@@ -1,4 +1,4 @@
-# Punica-demo
+# Has moved to [punica-box](https://github.com/punica-box)
 
 
 ## dApp开发框架Punica
