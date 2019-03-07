@@ -1,6 +1,6 @@
 #  Token兑换服务dApp
 
-Token兑换服务dApp,提供Ontology上Nep5规范的token相互兑换的服务，收取少量手续费。
+Token兑换服务dApp,提供Ontology上Oep5规范的token相互兑换的服务，收取少量手续费。
 
 ## 贡献者
 
@@ -9,7 +9,7 @@ Token兑换服务dApp,提供Ontology上Nep5规范的token相互兑换的服务�
 
 ## 功能介绍
 
-* 用户可以选择需要兑换的Nep5的token
+* 用户可以选择需要兑换的Oep5的token
 * 服务商可以设置token兑换的手续费
 
 ## 页面示例
@@ -28,7 +28,7 @@ Token兑换服务dApp,提供Ontology上Nep5规范的token相互兑换的服务�
 
 ## 合约
 
-Token互换合约实现的功能是：对于符合nep5标准的Token实现互换
+Token互换合约实现的功能是：对于符合oep5标准的Token实现互换
 
 ### 用法
 
@@ -69,7 +69,7 @@ namespace ExchangeContract
 
         public static readonly byte[] basePrefix = "base_".AsByteArray();
 
-        public delegate object NEP5Contract(string method, object[] args);
+        public delegate object OEP5Contract(string method, object[] args);
 
         public static Object Main(string operation, params object[] args)
         {
@@ -166,9 +166,9 @@ namespace ExchangeContract
 
             ulong toValue = (value * toBase / fromBase) * (100 - feeRate) / 100;
 
-            if (!TransferNEP5(from, to, fromHash, value)) throw new Exception();
+            if (!TransferOEP5(from, to, fromHash, value)) throw new Exception();
 
-            if (!TransferNEP5(contract, from, toHash, toValue)) throw new Exception();
+            if (!TransferOEP5(contract, from, toHash, toValue)) throw new Exception();
 
             return true;
         }
@@ -216,10 +216,10 @@ namespace ExchangeContract
             return Storage.Get(Storage.CurrentContext, key);
         }
 
-        private static bool TransferNEP5(byte[] from, byte[] to, byte[] assetID, BigInteger amount)
+        private static bool TransferOEP5(byte[] from, byte[] to, byte[] assetID, BigInteger amount)
         {
             var args = new object[] { from, to, amount };
-            var contract = (NEP5Contract)assetID.ToDelegate();
+            var contract = (OEP5Contract)assetID.ToDelegate();
             if (!(bool)contract("transfer", args)) return false;
             return true;
         }
