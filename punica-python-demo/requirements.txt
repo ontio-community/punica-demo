@@ -12,7 +12,7 @@ gitdb2==2.0.4
 GitPython==2.1.11
 idna==2.7
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.0
 ontology-dapp-box==0.0.1
 ontology-python-sdk==0.1.3
